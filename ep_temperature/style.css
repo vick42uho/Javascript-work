@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #59585f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(21, 8, 207);
+    margin: 30px;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}

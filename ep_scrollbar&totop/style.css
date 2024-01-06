@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #222;
+    padding-bottom: 50px;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: 'Charm', cursive;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    order: -1;
+    margin-right: auto;
+    margin-left: 10px
+}
+
+
+a:hover{
+    color: orangered;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+
+
+}
+
+nav {
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 20px 0;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    display: flex;
+    list-style-type: none;
+    margin: 0 1.5rem;
+}
+
+
+
+li a {
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+li a:hover{
+color: orangered;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.box {
+    border: 1px solid gray;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex>* {
+    margin: 3px;
+}
+
+section.header {
+    width: 100%;
+    height: 60vh;
+    background: url("https://images.pexels.com/photos/2565919/pexels-photo-2565919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* section.header{
+    background: url("image/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 20px;
+} */
+
+/* scrollbar */
+.scroll-indicator {
+    width: 100%;
+    height: 4px;
+    background: #036903;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 4px;
+    background: orangered;
+}
+
+/* scroll to top */
+.top{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    padding: 1rem;
+    border: 1px solid rgba(255, 60, 0, 0.884);
+    outline: none;
+    cursor: pointer;
+    z-index: 111;
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: all 0.3s; /* 30% */
+}
+
+.show-btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* เปลี่ยนสี header nav*/
+
+.nav.active{
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.nav.active a{
+    color: #000;
+}
+
+.nav.active a:hover{
+    color: orangered;
+}
